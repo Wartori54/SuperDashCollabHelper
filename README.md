@@ -1,2 +1,8 @@
 # SuperDashCollabHelper
-Replace with your mod's readme!
+CURRENTLY WIP
+
+sash collab helper maybe???
+
+contains: 
+- momentum bouncer
+- soup (big)
