@@ -31,7 +31,7 @@ public class MomentumBouncer : Entity {
     private readonly string texOverride;
     private readonly float minSpeed;
     private readonly PlayerCollider pc;
-    private readonly int lenght;
+    private readonly int length;
 
     public MomentumBouncer(EntityData data, Vector2 offset) 
         : this(data.Position+offset, data.Enum("directionI", Directions.Right), 
@@ -45,10 +45,10 @@ public class MomentumBouncer : Entity {
         this.direction = direction;
         this.texOverride = texOverride;
         this.minSpeed = minSpeed;
-        lenght = Math.Abs((int)this.direction) == HorizontalDirection ? height : width;
+        length = Math.Abs((int)this.direction) == HorizontalDirection ? height : width;
 
         // Add(GFX.SpriteBank.Create("momentumBouncer"));
-        Collider = GetHitbox(direction, lenght);
+        Collider = GetHitbox(direction, length);
         Add(pc = new PlayerCollider(OnCollide));
     }
 
@@ -56,7 +56,7 @@ public class MomentumBouncer : Entity {
         MTexture mTexture = GFX.Game["objects/SuperDashCollabHelper/momentumBouncer/" + texOverride];
         // textures may have multiple middle tile sprites
         int num = mTexture.Width / 8;
-        int tiles = lenght / 8;
+        int tiles = length / 8;
         int yTilePosition = direction == Directions.Down || direction == Directions.Left ? 8 : 0;
         // remember: horizontal bouncing direction -> vertical sprite
         float rotation = Math.Abs((int)direction) == HorizontalDirection ? (float) Math.PI / 2 : 0;
