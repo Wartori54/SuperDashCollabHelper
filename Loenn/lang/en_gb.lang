@@ -1,0 +1,8 @@
+mods.SuperDashCollabHelper.name=Super Dash Collab Helper
+
+# naming the entity
+entities.SuperDashCollabHelper/SoupEntity.placements.name.normal=Soup Entity
+entities.SuperDashCollabHelper/MomentumBouncerVertical.placements.name.leftwards=Momentum Bouncer (Left)
+entities.SuperDashCollabHelper/MomentumBouncerVertical.placements.name.rightwards=Momentum Bouncer (Right)
+entities.SuperDashCollabHelper/MomentumBouncerHorizontal.placements.name.upwards=Momentum Bouncer (Up)
+entities.SuperDashCollabHelper/MomentumBouncerHorizontal.placements.name.downwards=Momentum Bouncer (Down)

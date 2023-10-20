@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sprites>
+    <soupEntity path="objects/SuperDashCollabHelper/soupEntity/" start="idle">
+        <Justify x="0.5" y="0.5" />
+        <Anim id="idle" path="idle" delay="0.1" frames="0" />
+    </soupEntity>
+<!--    <momentumBouncer path="objects/SuperDashCollabHelper/momentumBouncer/" start="default">-->
+<!--        <Anim id="default" path="default" delay="0.1" frames="0" />-->
+<!--    </momentumBouncer>-->
+</Sprites>
