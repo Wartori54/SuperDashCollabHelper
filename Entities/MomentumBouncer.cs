@@ -115,15 +115,15 @@ public class MomentumBouncer : Entity {
         }
     }
 
-    private static Hitbox GetHitbox(Directions dir, int lenght) {
+    private static Hitbox GetHitbox(Directions dir, int length) {
         switch (dir) {
             case Directions.Down:
             case Directions.Up:
-                return new Hitbox(lenght, Thickness);
+                return new Hitbox(length, Thickness);
             case Directions.Left:
             case Directions.Right:
             default:
-                return new Hitbox(Thickness, lenght);
+                return new Hitbox(Thickness, length);
         }
     }
     
